@@ -1,7 +1,6 @@
 body{
     font-family: 'Arimo', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
-    font-family: 'Overpass', sans-serif; 
 }
 ul {
     list-style-type: none;
@@ -16,7 +15,7 @@ ul {
   }
   
   li a {
-    display: block;
+    display: inline-block;
     text-align: right;
     padding: 16px;
     text-decoration: none;
@@ -25,13 +24,20 @@ ul {
   }
   
   li a:hover {
-    background-color: blue;
+    background-color: lightseagreen;
   }
 
 .contact{
-    float: right;
+    float: left;
+
 }
 
+
+.topnav-centered{
+    float: right;
+    
+  }
+  
 .name{
     font-size: 28px;
 }
@@ -41,10 +47,15 @@ ul {
 }
 .profile-picture{
     width: 300px;
-    border-radius: 10px;
+    border-radius: 111px;
     height: 400px;
-    padding: 5px;
+    padding: 30px;
     text-align: center;
+}
+
+.logo{
+    height: auto;
+    width: 50px;
 }
 
 .column {
@@ -58,6 +69,6 @@ ul {
     
     text-align: center;
     margin: auto;
-    background-color: #31383f;
-    color: white;
+    background-color: whitesmoke;
+    color: black;
 }

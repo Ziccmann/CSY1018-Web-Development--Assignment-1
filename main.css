@@ -1,0 +1,63 @@
+body{
+    font-family: 'Arimo', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Overpass', sans-serif; 
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    text-align: right;
+    padding: 16px;
+    text-decoration: none;
+    color: black;
+    
+  }
+  
+  li a:hover {
+    background-color: blue;
+  }
+
+.contact{
+    float: right;
+}
+
+.name{
+    font-size: 28px;
+}
+
+.text{
+    font-size: 17px;
+}
+.profile-picture{
+    width: 300px;
+    border-radius: 10px;
+    height: 400px;
+    padding: 5px;
+    text-align: center;
+}
+
+.column {
+    width: 600px;
+    margin: auto;
+    /* display: inline-block; */
+    text-align: center;
+  } 
+
+.container {
+    
+    text-align: center;
+    margin: auto;
+    background-color: #31383f;
+    color: white;
+}

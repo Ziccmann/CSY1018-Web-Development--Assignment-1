@@ -1,6 +1,28 @@
 body{
     font-family: 'Arimo', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
+
+}
+
+nav{
+    grid-area: nav;
+}
+
+main{
+    grid-area: main;
+    background-color: whitesmoke;
+}
+
+footer{
+    grid-area: footer;
+    background-color: whitesmoke;
 }
 ul {
     list-style-type: none;
@@ -39,7 +61,7 @@ ul {
   }
   
 .name{
-    font-size: 28px;
+    font-size: 50px;
 }
 
 .text{
@@ -71,4 +93,49 @@ ul {
     margin: auto;
     background-color: whitesmoke;
     color: black;
+}
+
+
+.portfolio{
+    font-size: 50px;
+    text-align: center;
+
+}
+
+.csy1018 {
+    background-color: skyblue;
+ display: block;
+ width: 350px;
+ float: left;
+ height: 400px;
+ border-radius: 30px;
+ margin: 5px;
+}
+.csy1019 {
+    background-color: lightseagreen;
+    display: block;
+    width: 350px;
+    float: left;
+    height: 400px;
+    border-radius: 30px;
+    margin: 5px;
+}
+.csy1014 {
+    background-color:red;
+    display: block;
+    width: 350px;
+    float: left;
+    height: 400px;
+    border-radius: 30px;
+    margin: 5px;
+}
+
+.csy1016 {
+    background-color:pink;
+    display: block;
+    width: 350px;
+    float: left;
+    height: 400px;
+    border-radius: 30px;
+    margin: 5px;
 }

@@ -18,6 +18,7 @@ nav{
 main{
     grid-area: main;
     background-color: whitesmoke;
+
 }
 
 footer{
@@ -49,15 +50,8 @@ ul {
     background-color: lightseagreen;
   }
 
-.contact{
-    float: left;
-
-}
-
-
 .topnav-centered{
     float: right;
-    
   }
   
 .name{
@@ -67,12 +61,17 @@ ul {
 .text{
     font-size: 17px;
 }
+
+.about{text-align: center;
+    font-size: 40px;
+
+}
 .profile-picture{
     width: 300px;
     border-radius: 111px;
     height: 400px;
     padding: 30px;
-    text-align: center;
+   
 }
 
 .logo{
@@ -81,25 +80,23 @@ ul {
 }
 
 .column {
-    width: 600px;
+    width: 800px;
     margin: auto;
-    /* display: inline-block; */
-    text-align: center;
+    display: inline-block;
+    height: 50%;
   } 
 
 .container {
     
     text-align: center;
     margin: auto;
-    background-color: whitesmoke;
-    color: black;
+   
 }
 
 
 .portfolio{
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
-
 }
 
 .csy1018 {
@@ -138,4 +135,70 @@ ul {
     height: 400px;
     border-radius: 30px;
     margin: 5px;
+}
+
+
+.contactme{
+    font-size: 40px;
+    text-align: center;
+    width: 700px;
+}
+
+.contact{
+    position: relative;
+    min-height: 80vh;
+    padding: 50px 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact .contents h3{
+    font-size: 36px;
+    font-weight: 500;
+    
+}
+
+.contact .contents p{
+    font-weight: 300;
+    text-align: left;
+    width: 280px;
+}
+
+.container2{
+    width: 50%;
+    display: flex;
+    height: 50%;
+    margin-top: -25px;
+    float: left;
+
+}
+
+.contact .mycontactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+
+.contact .mycontactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contact .mycontactinfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+}
+
+.contact .contactform{
+    float: right;
+    text-align: left;
+    width: 45%;
+}
+
+.input{
+    padding: 30px;
 }

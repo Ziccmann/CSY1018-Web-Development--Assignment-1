@@ -17,7 +17,7 @@ nav{
 
 main{
     grid-area: main;
-    background-color: whitesmoke;
+    background-color: skyblue;
 
 }
 
@@ -47,7 +47,7 @@ ul {
   }
   
   li a:hover {
-    background-color: lightseagreen;
+    background-color: skyblue;
   }
 
 .topnav-centered{
@@ -63,7 +63,7 @@ ul {
 }
 
 .about{text-align: center;
-    font-size: 40px;
+    /* font-size: 40px; */
 
 }
 .profile-picture{
@@ -95,12 +95,12 @@ ul {
 
 
 .portfolio{
-    font-size: 40px;
+    /* font-size: 40px; */
     text-align: center;
 }
 
 .csy1018 {
-    background-color: skyblue;
+    background-color: whitesmoke;
  display: block;
  width: 350px;
  float: left;
@@ -139,23 +139,26 @@ ul {
 
 
 .contactme{
-    font-size: 40px;
+    /* font-size: 40px; */
     text-align: center;
     width: 700px;
+    
 }
 
 .contact{
-    position: relative;
+     position: relative;
     min-height: 80vh;
     padding: 50px 100px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: auto;
 }
 
 .contact .contents h3{
     font-size: 36px;
     font-weight: 500;
+    margin: auto;
     
 }
 
@@ -166,11 +169,12 @@ ul {
 }
 
 .container2{
-    width: 50%;
+    width: 41%;
     display: flex;
     height: 50%;
     margin-top: -25px;
     float: left;
+    border-right: 2px solid;
 
 }
 
@@ -183,7 +187,7 @@ ul {
 
 .contact .mycontactinfo .box{
     position: relative;
-    padding: 20px 0;
+    padding: 15px;
     display: flex;
 }
 
@@ -200,5 +204,34 @@ ul {
 }
 
 .input{
-    padding: 30px;
+    padding: 15px;
+}
+
+form {
+    /* display: grid; */
+    width: 180px;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    grid-gap: 0.5em;
+    }
+.submit {
+    grid-column: 2;
+    }
+
+.blogs{
+    align-items: center;
+    position: relative;
+    width: 50%;
+    margin: auto;
+    border-radius: 30px;
+    background-color: whitesmoke;
+}
+
+.blogs p {
+    margin: 10px;
+    padding: 10px;
+}
+
+.blogs h3 {
+    padding: 10px;
 }

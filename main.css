@@ -152,9 +152,7 @@ li a {
 
 
 .contactme{
-    /* font-size: 40px; */
     text-align: center;
-    /* width: 700px; */
 }
 
 .contact{
@@ -265,8 +263,7 @@ textarea{
 
 input[type=text]{
     width: 100%;
-    /* padding: 10px 15px; */
-    /* margin: 1px 0; */
+
     display: inline-block;
     border: 1px solid black;
     border-radius: 4px;
@@ -299,7 +296,7 @@ input[type=text]{
 {
     min-width: 22px;
     height: 23px;
-    display: flex;
+    display: inline;
 }
 
   

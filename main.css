@@ -1,93 +1,152 @@
-body{
+body {
     font-family: 'Arimo', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
     display: grid;
     grid-template-columns: 20% 60% 20%;
     grid-template-rows: auto;
     grid-template-areas:
-    "nav nav nav"
-    "main main main"
-    "footer footer footer";
+        "nav nav nav"
+        "main main main"
+        "footer footer footer";
 }
 
-nav{
+nav {
     grid-area: nav;
 }
 
-main{
+
+
+.dropdownbar {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdownbar .dropbutton {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover,
+.dropdownbar:hover .dropbutton {
+    background-color: skyblue;
+}
+
+.dropdowncontents {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdowncontents a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdowncontents a:hover {
+    background-color: burlywood;
+}
+
+.dropdownbar:hover .dropdowncontents {
+    display: block;
+}
+
+main {
     grid-area: main;
     background-color: skyblue;
 }
 
-footer{
+footer {
     grid-area: footer;
     background-color: whitesmoke;
 }
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: white;
-  }
-  
+}
+
 li {
     float: left;
-  }
-  
+}
+
 li a {
     display: inline-block;
     text-align: right;
     padding: 16px;
     text-decoration: none;
     color: black;
-  }
-  
-  li a:hover {
-    background-color: skyblue;
-  }
+}
 
-  a:link {
+li a:hover {
+    background-color: skyblue;
+}
+
+a:link {
     color: black;
     background-color: transparent;
     text-decoration: none;
-  }
-  a:hover {
+}
+
+a:hover {
     color: black;
     background-color: skyblue;
-  }
+}
 
-  a:visited {
+a:visited {
     color: black;
     background-color: transparent;
     text-decoration: none;
-  }
+}
 
-.topnav-centered{
+.topnav-centered {
     float: right;
-  }
-  
-.name{
+}
+
+.dropdownbar {
+    float: left;
+    text-align: center;
+    height: auto;
+}
+
+.name {
     font-size: 50px;
 }
 
-.text{
+.text {
     font-size: 17px;
 }
 
-.about{text-align: center;
+.about {
+    text-align: center;
     /* font-size: 40px; */
 
 }
-.profile-picture{
+
+.profile-picture {
     width: 300px;
     border-radius: 111px;
     height: 400px;
     padding: 30px;
-   
+
 }
 
-.logo{
+.logo {
     height: auto;
     width: 50px;
 }
@@ -97,30 +156,30 @@ li a {
     margin: auto;
     display: inline-block;
     height: 50%;
-  } 
+}
 
 .container {
-    
+
     text-align: center;
     margin: auto;
-   
+
 }
 
 
-.portfolio{
+.portfolio {
     text-align: center;
 }
 
-.csy1018 
-{
- background-color: whitesmoke;
- display: block;
- width: 350px;
- float: left;
- height: 400px;
- border-radius: 30px;
- margin: 5px;
+.csy1018 {
+    background-color: whitesmoke;
+    display: block;
+    width: 350px;
+    float: left;
+    height: 400px;
+    border-radius: 30px;
+    margin: 5px;
 }
+
 .csy1019 {
     background-color: lightseagreen;
     display: block;
@@ -130,8 +189,9 @@ li a {
     border-radius: 30px;
     margin: 5px;
 }
+
 .csy1014 {
-    background-color:red;
+    background-color: red;
     display: block;
     width: 350px;
     float: left;
@@ -141,7 +201,7 @@ li a {
 }
 
 .csy1016 {
-    background-color:pink;
+    background-color: pink;
     display: block;
     width: 350px;
     float: left;
@@ -151,12 +211,12 @@ li a {
 }
 
 
-.contactme{
+.contactme {
     text-align: center;
+    width: 80%;
 }
 
-.contact{
-     position: relative;
+.contact {
     min-height: 80vh;
     padding: 50px 100px;
     justify-content: center;
@@ -165,19 +225,19 @@ li a {
     margin: auto;
 }
 
-.contact .contents h3{
+.contact .contents h3 {
     font-size: 36px;
     font-weight: 500;
     margin: auto;
 }
 
-.contact .contents p{
+.contact .contents p {
     font-weight: 300;
     text-align: left;
     width: 280px;
 }
 
-.container2{
+.container2 {
     width: 41%;
     display: flex;
     height: 50%;
@@ -187,53 +247,53 @@ li a {
 
 }
 
-.contact .mycontactinfo{
+.contact .mycontactinfo {
     width: 50%;
     display: flex;
     flex-direction: column;
     float: right;
 }
 
-.contact .mycontactinfo .box{
-    position: relative;
+.contact .mycontactinfo .box {
+
     padding: 15px;
     display: flex;
 }
 
-.contact .mycontactinfo .box .icon{
+.contact .mycontactinfo .box .icon {
     min-width: 60px;
     height: 60px;
     display: flex;
 }
 
-.contact .contactform{
+.contact .contactform {
     float: right;
     text-align: left;
     width: 45%;
 }
 
-.input{
+.input {
     padding: 15px;
 }
 
 form {
-    /* display: grid; */
     width: 180px;
     grid-template-columns: 50% 50%;
     align-items: center;
     grid-gap: 0.5em;
-    }
+}
+
 .submit {
     grid-column: 2;
-    }
+}
 
-.blog{
+.blog {
     text-align: center;
 
 }
-.blogs{
+
+.blogs {
     align-items: center;
-    position: relative;
     width: 50%;
     margin: auto;
     border-radius: 30px;
@@ -250,7 +310,7 @@ form {
     padding: 10px;
 }
 
-textarea{
+textarea {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -258,10 +318,10 @@ textarea{
     border: 1px solid black;
     border-radius: 4px;
     box-sizing: border-box;
-  }
+}
 
 
-input[type=text]{
+input[type=text] {
     width: 100%;
 
     display: inline-block;
@@ -269,34 +329,30 @@ input[type=text]{
     border-radius: 4px;
     box-sizing: border-box;
     height: auto;
-    
-  }
 
-  .sitereport{
+}
+
+.sitereport {
     text-align: center;
-    position: relative;
     height: 10vh;
     padding: 50px 100px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: auto;
-    
-  }
 
-  .sitereports {
+}
+
+.sitereports {
     align-items: center;
-    position: relative;
-    width: 85%;
-    margin: auto; 
-  }
+    width: 70%;
+    margin: auto;
+    font-size: large;
+}
 
 
-  .copyrightslink .logo
-{
+.copyrightslink .logo {
     min-width: 22px;
     height: 23px;
     display: inline;
 }
-
-  

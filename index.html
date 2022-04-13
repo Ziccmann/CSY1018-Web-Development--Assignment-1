@@ -12,19 +12,25 @@
         href="https://fonts.googleapis.com/css2?family=Arimo&family=Josefin+Sans:ital,wght@1,300;1,500&family=Overpass:wght@600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 1000px)"/>
     <link rel="import" href="component.html">
 
 
 </head>
 
 <body>
+      
+    <header>
+        <a href="#clicked" class="on shownav"></a>
+        <a href="#" class="off">X</a>
+    </header>
     <nav>
-        <ul>
+        <ul class="navtext">
             <li class="topnav-centered">
                 <a href="index.html" target="blank"><img class="logo" src="logo/logo.jpg" alt="ZICC"></a>
             </li>
             <li>
-                <a href="index.html"> Home </a>
+                <a href="index.html"><span class="hometext"></span> Home </a>
             </li>
             <li>
                 <a href="portfolio.html">Portfolio</a>
